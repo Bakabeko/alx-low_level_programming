@@ -2,23 +2,29 @@
 #include <time.h>
 #include <stdio.h>
 
-/**test
- * we are going to test arandom number
- */
 
 int main(void)
 {
+
+	
+/**tast
+ * we are going to test this number if
+ * *
+* it is negstive or positive or zero
+*
+* then return(0)
+*/
+
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-printf("number=%d\n ",n);
 if(n>0)
-        printf("is positive\n");
+        printf("%i is positive\n", n);
 else if(n==0)
-        printf("is negative\n");
+        printf("%i is negative\n", n);
 else
-	printf("is zero\n");
+	printf("%i is zero\n", n);
 
 	return (0);
 }
