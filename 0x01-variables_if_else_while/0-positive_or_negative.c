@@ -3,24 +3,21 @@
 #include <stdio.h>
 
 /**
- *main - entery point
- * 
- *false or true validation
+ *main - false or true validation
  *
  *Return : 0 (sucess)
 */
 
 int main(void)
 {
-        int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-        if ( n > 0 )
-              printf("%i is positive\n", n);
-        else if ( n == 0 )
-              printf("%i is zero\n", n);
-        else
-	      printf("%i is negative\n", n);
-        return (0);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if ( n > 0 )
+	printf("%i is positive\n", n);
+else if ( n == 0 )
+        printf("%i is zero\n", n);
+else
+        printf("%i is negative\n", n);
+return (0);
 }
