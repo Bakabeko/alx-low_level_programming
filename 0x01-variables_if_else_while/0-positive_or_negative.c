@@ -2,17 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 
-/**tast
- * we are going to test this number if
- * *
-* it is negstive or positive or zero
+/**
+*main - entery point
+* 
+*false or true validation
 *
-* then return(zero)
+*Return 0: (sucess)
 */
+
 int main(void)
 {
-
-	int n;
+        int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
