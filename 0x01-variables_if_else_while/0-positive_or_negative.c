@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- *main - false or true validation
+/**
+ * main - Entry point
  *
  * description : test a randum number if it is negative or psitive or zero
  *
- *Return : 0 always (sucess)
+ * Return : 0 (sucess)
  */
 
 int main(void)
