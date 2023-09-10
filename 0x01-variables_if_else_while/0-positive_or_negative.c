@@ -8,7 +8,7 @@
  *
  * description : test a randum number if it is negative or psitive or zero
  *
- * Return : 0 (sucess)
+ * Return: 0 (sucess)
  */
 
 
