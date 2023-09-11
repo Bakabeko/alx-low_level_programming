@@ -12,6 +12,7 @@ while (num <= 9)
 {
 if (num != 9)
 {
+	pitchar(num + 48);
 	putchar(',');
 	putchar(' ');
 }

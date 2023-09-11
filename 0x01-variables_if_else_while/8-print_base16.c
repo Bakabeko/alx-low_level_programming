@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/** main - print hexdecimal number from 0 to 9
+/**
+ * main - print hexdecimal number from 0 to 9
  *
- * return : always 0 (succses)
+ * Return: always 0 (succses)
  */
 
 int main (void)
@@ -10,10 +11,12 @@ int main (void)
  int num = 48;
  while (num <= 102)
 {	 
-if (num == 57)
+if (num == 57) {
 	num += 39;
-num++;
+        putchar(num + 48);
 }
-putchar('\n');
+        num++;
+}
+        putchar('\n');
 return (0);
 }
