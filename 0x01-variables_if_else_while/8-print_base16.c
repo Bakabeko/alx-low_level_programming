@@ -6,15 +6,13 @@
  * Return: always 0 (succses)
  */
 
-int main (void)
+int main(void)
 {
 int num = 48;
-while (num <= 102)
-{	 
-if (num == 58) {
+while (num <= 102) {	 
+if (num == 58) 
 	num += 39;
 
-}
         putchar(num);
         num++;
 }
