@@ -1,27 +1,24 @@
 #include <stdio.h>
 
-/** 
- * main - print all character without q and e
+/**
+ * main - Entry point
  *
- * Return: always 0 (success)
+ *
+ * Return: Always 0 (Sucess)
  */
 
-int main (void)
+int main(void)
 {
+	char c;
 
-int lower = 'a';
-while (lower <= 'z')
-{
-if (lower == 'q' || lower == 'e')
-{
-     lower++;
-}
-else
-{
-     putchar(lower);
-     lower++;
-}
-}
-     putchar('\n');
-return (0);
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		if ((c == 'q' || c == 'e') != 1)
+		{
+			putchar(c);
+		}
+
+	}
+	putchar('\n');
+	return (0);
 }

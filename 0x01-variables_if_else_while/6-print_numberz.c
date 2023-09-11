@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - print all single digit number with put char
+ * main - Entry point
  *
- * Return: always 0 (success)
- *
+ * Return: Always 0 (Succes)
  */
-int main (void)
 
+int main(void)
 {
-int num;
-for (num = 0;num <= 9;num++)
-{
-        putchar(num + 48);
-}
-        putchar('\n');
-return (0);
+	int n;
 
+	for (n = 0 ; n < 10 ; n++)
+	{
+		putchar(n + '0');
+	}
+	putchar('\n');
+	return (0);
 }
+

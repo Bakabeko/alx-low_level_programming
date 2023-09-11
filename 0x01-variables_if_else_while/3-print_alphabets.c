@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - print upper case and lower case
+ * main - Entry point
  *
- * Return: always 0 (success)
  *
+ * Return: Always 0 (Sucess)
  */
 
-int main (void)
+int main(void)
 {
+	char c;
 
-int lower = 'a';
-int upper = 'A';
-while (lower <= 'z')
-{
-       putchar(lower);
-       lower++;
-}
-while (upper <= 'z')
-{
-        putchar(upper);
-}
-        putchar('\n');
- return (0);
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		putchar(c);
+
+	}
+
+	for (c = 'A' ; c <= 'Z' ; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }

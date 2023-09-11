@@ -1,25 +1,24 @@
 #include <stdio.h>
 
 /**
- * 
- * main - print : 0, 1,..., 9
+ * main - Entry point
  *
- * Return: always 0 (success)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-int num = 0;
-while (num < 10)
-{
-if (num != 9)
-{
-	putchar(num + 48);
-	putchar(',');
-	putchar(' ');
-}
-        num++;
-} 
-        putchar('\n');
-return (0);
+	int n;
+
+	for (n = 0 ; n < 10 ; n++)
+	{
+		putchar(n + '0');
+		if (n < 9)
+		{
+			putchar(',');
+			putchar(32);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
