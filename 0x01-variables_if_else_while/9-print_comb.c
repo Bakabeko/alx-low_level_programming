@@ -2,7 +2,7 @@
 
 /** main - print : 0, 1,..., 9
  *
- * return : always 0 (success)
+ * Return : always 0 (success)
  */
 
 int main (void)
@@ -12,7 +12,7 @@ while (num <= 9)
 {
 if (num != 9)
 {
-	pitchar(num + 48);
+	putchar(num + 48);
 	putchar(',');
 	putchar(' ');
 }
