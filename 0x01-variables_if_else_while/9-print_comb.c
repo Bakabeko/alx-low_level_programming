@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/** main - print : 0, 1,..., 9
+/** 
+ * main - print : 0, 1,..., 9
  *
- * Return : always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main (void)
