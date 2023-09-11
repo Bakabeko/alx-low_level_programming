@@ -15,7 +15,7 @@ if (num == 58) {
 	num += 39;
 
 }
-        puchar(num);
+        putchar(num);
         num++;
 }
         putchar('\n');
