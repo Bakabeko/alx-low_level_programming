@@ -1,18 +1,18 @@
-#include <stdio.h>
-                                                  /**                                                * main - print lower case in reverse 
+/**
+ * main - Entry point
  *
- * Return: always 0 (success)
  *
+ * Return: Always 0 (Sucess)
  */
 
-int main (void)
+int main(void)
 {
+	char c;
 
-int lower='z';
-while (lower >= 'a') {
-	putchar(lower);
-	lower--;
-}
-        putchar('\n');
-return (0);
+	for (c = 'z' ; c >= 'a' ; c--)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
