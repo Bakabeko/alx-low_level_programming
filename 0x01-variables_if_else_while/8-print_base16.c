@@ -8,13 +8,14 @@
 
 int main (void)
 {
- int num = 48;
- while (num <= 102)
+int num = 48;
+while (num <= 102)
 {	 
-if (num == 57) {
+if (num == 58) {
 	num += 39;
-        putchar(num + 48);
+
 }
+        puchar(num);
         num++;
 }
         putchar('\n');
