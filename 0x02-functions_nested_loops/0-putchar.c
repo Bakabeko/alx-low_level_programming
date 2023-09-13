@@ -9,14 +9,14 @@
  * return : always 0 (success)
  */
 
-int main(){
+int main(void){
 
 int i;
 char str[] = "_putchar";
 for(i = 0;i < 8;i++){
-	putchar(str[i]);
+	_putchar(str[i]);
 }
-putchar('\n');
+        _putchar('\n');
 
 return (0);
 }
