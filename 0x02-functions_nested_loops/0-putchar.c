@@ -1,22 +1,18 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * Entry - point
+ * main - Entry point
  *
- * description : print _putchar
- *
- * return : always 0 (success)
+ * Return: Alway 0 (Sucess)
  */
 
-int main(void){
+int main(void)
+{
+	char *h = "Holberton\n";
 
-int i;
-char str[] = "_putchar";
-for(i = 0;i < 8;i++){
-	_putchar(str[i]);
-}
-        _putchar('\n');
-
-return (0);
+	while (*h)
+	{
+		_putchar(*h);
+		h++;
+	}
+	return (0);
 }
