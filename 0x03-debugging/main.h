@@ -1,11 +1,1 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdio.h>
-
-void positive_or_negative(int i);
-int largest_number(int a, int b, int c);
-int convert_day(int month, int day);
-void print_remaining_days(int month, int day, int year);
-
-#endif /* MAIN_H */
+VimCrypt~03!?øóòö”¿z#ˆùq†D6Z7Â{–„;Vû	®š2¼Oš…ÛY`Õµá7¢èuô<”¿‚ö¯ÚïàŠÕÎ®üâ·8¯&|Ãy!º¸"ûFõDêqë‘ßfÃO8ÇÙWg'ã8;QäàNÕxµßt7„€Š¨ì–‡¡¹Ùx×â¬‹©…mº¸^ù+åqÛÇ"ŸŸßmD¢}¨¤°#”–îu-Ù˜’OÚõ}ÛVŒs›»o¯(¤í`ePŒ‡!ÿ}1Q/q›İW"Çi!òÃhgñôE-Aûb½ë±é"‹ÄÉ àö9Ò˜¥ú'æ/z‰a÷Ú¯º»æ&ìëys
