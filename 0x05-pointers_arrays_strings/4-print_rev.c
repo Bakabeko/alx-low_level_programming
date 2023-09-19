@@ -1,20 +1,47 @@
 #include "main.h"
+
 /**
- * print_rev - minic the stdio version of puts
- * @s: the value to process to the stdout in reverse.
+ *
+ * print_rev - imprime en reversa
+ *
+ * @s: string
+ *
+ * return: 0
+ *
  */
+
 void print_rev(char *s)
+
 {
-	int count;
 
-	while (*(s + count) != '\0')
-	{
-		count++;
-	}
+        int longi = 0;
 
-	while (count--)
-	{
-		_putchar(*(s + (count)));
-	}
-	_putchar('\n');
+        int o;
+
+
+        while (*s != '\0')
+
+        {
+
+                longi++;
+
+                s++;
+
+        }
+
+        s--;
+
+        for (o = longi; o > 0; o--)
+
+        {
+
+                _putchar(*s);
+
+                s--;
+
+        }
+
+
+        _putchar('\n');
+
 }
