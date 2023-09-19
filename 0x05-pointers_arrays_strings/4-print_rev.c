@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_rev - minic the stdio version of puts
  * @s: the value to process to the stdout in reverse.
