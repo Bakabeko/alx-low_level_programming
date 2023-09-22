@@ -27,6 +27,7 @@ int is_sep(char s)
  *
  * Return: pointer to the modified string.
  */
+
 char *cap_string(char *s)
 {
 	int sep, i;
@@ -42,6 +43,6 @@ char *cap_string(char *s)
 		}
 		sep = is_sep(s[i]);
 		i++;
-}
+	}
 	return (s);
 }
