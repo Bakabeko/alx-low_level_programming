@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * is_sep - check if a char is a seperator.
 * @s: the char to test.
@@ -10,6 +11,7 @@ int is_sep(char s)
 	char sep[] = {'\t', '\n', ' ', ',', ';', '!',
 		      '.', '?', '\"', '(', ')', '{', '}'};
 	int i = 0;
+
 	while (sep[i] != '\0')
 	{
 		if (s == sep[i])
@@ -18,6 +20,7 @@ int is_sep(char s)
 	}
 	return (0);
 }
+
 /**
 * cap_string - This function capitalizes all words of a string.
 * @s: sring to be processed.
@@ -29,6 +32,7 @@ char *cap_string(char *s)
 	int sep, i;
 	sep = 1;
 	i = 0;
+
 	while (s[i] != '\0')
 	{
 		if (sep == 1 && (s[i] >= 'a' && s[i] <= 'z'))
