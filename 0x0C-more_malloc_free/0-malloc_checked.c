@@ -1,4 +1,4 @@
-#include "main.h"
+:x
 
 /**
  * malloc_checked - fuction that allocates memory and also checks if sucessful
@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 
 	ptr = malloc(b);
 	if (ptr == NULL)
-		exit(98);
+		free(ptr);
 
 	return (ptr);
 }
