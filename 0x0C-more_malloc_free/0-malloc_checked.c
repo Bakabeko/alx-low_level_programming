@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 /**
  * malloc_checked - fuction that allocates memory and also checks if sucessful
