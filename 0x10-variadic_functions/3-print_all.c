@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
  * pr_int - print a integer type;

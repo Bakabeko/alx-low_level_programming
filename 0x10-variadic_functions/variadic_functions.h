@@ -3,8 +3,8 @@
 #include <stdarg.h>
 #endif
 
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _VARIADIC_FUNCTIONS_H
+#define _VARIADIC_FUNCTIONS_H
 /**
  * struct print_ops - struct use to match the operator
  * with correlating function
