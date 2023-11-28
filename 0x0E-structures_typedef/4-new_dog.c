@@ -1,59 +1,58 @@
 #include "dog.h"
 #include <stdlib.h>
-
 /**
- * _strcopy - copy read only data to mutatable.
- * @dst: pointer to copy char to.
- * @src: read only data.
- */
-void _strcopy(char *dst, char *src)
-{
-	int i;
-
-	for (i = 0; src[i]; i++)
-		dst[i] = src[i];
-	dst[i] = '\0';
-}
-
-/**
- * new_dog - create new dog from the dna of the first dog.
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ * new_dog -  creates a new dog.
  *
- * Return: pointer to dog
+ *
+ * @name: char type
+ *
+ * @age: float type
+ *
+ * @owner: char type
+ *
+ * Return: Pointer to struct
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
-	int a, b;
+	dog_t *newDog;
+	int length1, length2, i, j;
 
-	for (a = 0; name[a]; a++)
-		;
-	for (b = 0; owner[b]; b++)
-		;
+	length1 = 0, length2 = 0;
+	newDog = malloc(sizeof(struct dog));
 
-	d = malloc(sizeof(dog_t));
-	if (!d)
+	if (newDog == NULL)
 		return (NULL);
 
-	d->name = malloc(a + 1);
-	if (!d->name)
+	while (name[length1++])
+		;
+	while (owner[length2++])
+		;
+
+	newDog->name = malloc(sizeof(newDog->name) * length1);
+
+	if (newDog->name == NULL)
 	{
-		free(d);
+		free(newDog);
 		return (NULL);
 	}
 
-	d->owner = malloc(b + 1);
-	if (!d->owner)
+	for (i = 0; i < length1; i++)
+		newDog->name[i] = name[i];
+
+	newDog->age = age;
+
+
+	newDog->owner = malloc(sizeof(newDog->owner) * length2);
+
+	if (newDog->owner == NULL)
 	{
-		free(d->name);
-		free(d);
+		free(newDog->name);
+		free(newDog);
 		return (NULL);
 	}
+	for (j = 0; j < length2; j++)
+		newDog->owner[j] = owner[j];
 
-	_strcopy(d->name, name);
-	_strcopy(d->owner, owner);
-	d->age = age;
-	return (d);
+	return (newDog);
 }
