@@ -1,45 +1,50 @@
 #include "lists.h"
+
 /**
- * delete_dnodeint_at_index - Delete node at nth
- * @head: Pointer to direction of the head
- * @index: The position in de ll
- * Return: 1 if it succeeded or -1 if it failed
+ * delete_dnodeint_at_index - function that deletes the node at index of a,
+ * linked list.
+ * @head: pointer to pointer to the h of linked list.
+ * @index: ndex of the node that should be deleted. Index starts at 0.
+ *
+ * Return: if it succeeded, -1 if it failed
  */
+
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *p1, *res_mem = *head;
-	unsigned int counter = 0;
+	dlistint_t *head1;
+	dlistint_t *head2;
+	unsigned int count;
 
-	if (head == NULL || *head == NULL)
-		return (-1);
+	head1 = *head;
 
-	if (index == 0)
-	{
-		*head = res_mem->next;
-		if (res_mem->next == NULL)
-			return (-1);
-		res_mem->next->prev = NULL;
-		free(res_mem);
-		return (1);
-	}
+	if (head1 != NULL)
+		while (head1->prev != NULL)
+			head1 = head1->prev;
+	count = 0;
 
-	while (counter < index)
+	while (head1 != NULL)
 	{
-		if (res_mem->next == NULL)
-			return (-1);
-		res_mem = res_mem->next;
-		counter++;
+		if (count == index)
+		{
+			if (count == 0)
+			{
+				*head = head1->next;
+				if (*head != NULL)
+					(*head)->prev = NULL;
+			}
+			else
+			{
+				head2->next = head1->next;
+
+				if (head1->next != NULL)
+					head1->next->prev = head2;
+			}
+			free(head1);
+			return (1);
+		}
+		head2 = head1;
+		head1 = head1->next;
+		count++;
 	}
-	res_mem->prev->next = res_mem->next;
-	if (res_mem->next)
-		res_mem->next->prev = res_mem->prev;
-	if (res_mem->next == NULL)
-	{
-		p1 = res_mem->prev;
-		p1->next = NULL;
-		free(res_mem);
-		return (1);
-	}
-	free(res_mem);
-	return (1);
+	return (-1);
 }
